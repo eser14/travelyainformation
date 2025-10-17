@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://travelya.travel/sitemap.xml
+
+# Travelya - Traveler Social Platform
+# This file tells search engines (like Google, Bing, DuckDuckGo) that they are allowed to crawl all pages.
+# The Sitemap line helps them discover your pages faster.

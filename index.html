@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Travelya is coming soon. Our domain will be active shortly." />
+  <title>Travelya – Coming Soon</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans","Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.5;background:#0e1217;color:#e8eef5}
+    a{color:inherit;text-decoration:none}
+    .bg{position:fixed;inset:0;z-index:-1;
+      background: radial-gradient(60% 60% at 80% 20%, #1c2a3a 0%, transparent 70%),
+                  radial-gradient(60% 60% at 20% 80%, #182436 0%, transparent 70%),
+                  linear-gradient(180deg,#0e1217 0%, #0b0f14 100%);
+      filter:saturate(110%);}
+    .grid{position:fixed;inset:0;z-index:-1;
+      background-image: linear-gradient(#ffffff10 1px, transparent 1px),
+                        linear-gradient(90deg,#ffffff10 1px, transparent 1px);
+      background-size:40px 40px;
+      mask-image: radial-gradient(70% 70% at 50% 50%, black 0%, transparent 100%);
+      animation: drift 30s linear infinite;
+      opacity:.25;}
+    @keyframes drift { from{background-position:0 0,0 0} to{background-position:200px 200px,200px 200px} }
+
+    .wrap{min-height:100%;display:grid;place-items:center;padding:32px}
+    .card{width:100%;max-width:720px;background:#0f141b80;border:1px solid #253041;border-radius:20px;backdrop-filter: blur(8px);box-shadow:0 10px 30px #0006}
+
+    .inner{padding:28px 28px 24px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-weight:700;background:conic-gradient(from 180deg, #77bfff, #62e0b8, #77bfff);color:#0b1016;box-shadow:inset 0 0 30px #ffffffaa, 0 8px 20px #0008}
+    .title{font-size:clamp(24px,3.3vw,32px);font-weight:800;letter-spacing:.2px}
+    .subtitle{margin-top:4px;color:#a9b8cc}
+
+    .bar{margin:22px 0 8px;height:10px;background:#16202d;border:1px solid #263243;border-radius:999px;overflow:hidden}
+    .bar>span{display:block;height:100%;width:40%;background:linear-gradient(90deg,#62e0b8,#77bfff);animation:load 2.8s ease-in-out infinite}
+    @keyframes load{0%{transform:translateX(-60%)}50%{transform:translateX(10%)}100%{transform:translateX(120%)}}
+
+    .info{display:grid;gap:8px;margin-top:8px}
+    .badge{display:inline-flex;gap:8px;align-items:center;font-size:12px;padding:6px 10px;border:1px solid #263243;border-radius:999px;color:#cfe3ff;background:#12202f}
+    .dot{width:8px;height:8px;border-radius:50%;background:#62e0b8;box-shadow:0 0 8px #62e0b8}
+    .text{margin-top:8px;color:#c7d4e6}
+
+    .footer{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;padding:14px 20px;border-top:1px solid #253041;background:#0b101680;border-radius:0 0 20px 20px}
+    .links{display:flex;gap:10px;flex-wrap:wrap}
+    .chip{font-size:13px;padding:8px 12px;border:1px solid #263243;border-radius:12px;color:#a9b8cc}
+    .chip:hover{border-color:#62e0b8;color:#e8eef5}
+
+    @media (max-width:420px){
+      .logo{width:48px;height:48px;border-radius:14px}
+      .footer{gap:8px}
+    }
+  </style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="grid"></div>
+  <main class="wrap">
+    <section class="card" role="region" aria-label="Travelya Info">
+      <div class="inner">
+        <header class="brand">
+          <div aria-hidden="true" class="logo">T</div>
+          <div>
+            <h1 class="title">Travelya is coming soon</h1>
+            <p class="subtitle">Our domain will be active shortly. We're preparing the site.</p>
+          </div>
+        </header>
+
+        <div class="bar" aria-hidden="true"><span></span></div>
+
+        <div class="info">
+          <span class="badge"><span class="dot" aria-hidden="true"></span> Status: Activation in progress</span>
+          <p class="text">Once DNS configuration and publishing are complete, the site will be live. Stay tuned!</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="links">
+          <a class="chip" href="info@travelya.travel" title="Contact via email">Contact Us</a>
+          <a class="chip" href="about.html" title="About the site">About</a>
+        </div>
+        <small style="color:#8fa4bf">© <span id="y"></span> Travelya</small>
+      </footer>
+    </section>
+  </main>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>

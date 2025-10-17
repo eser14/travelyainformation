@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Travelya – A next-generation social platform where travelers share their journeys, experiences, and discoveries." />
+  <title>Travelya – About</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans","Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";
+      line-height:1.6;
+      background:#0e1217;
+      color:#e8eef5;
+    }
+    a{color:#77bfff;text-decoration:none;transition:.2s ease}
+    a:hover{text-decoration:underline;color:#9cd3ff}
+
+    header{
+      padding:24px;
+      text-align:center;
+      background:#10161e;
+      border-bottom:1px solid #263243
+    }
+    header h1{
+      font-size:clamp(26px,3vw,34px);
+      margin:0;
+      color:#62e0b8;
+      letter-spacing:0.3px;
+    }
+    header p{
+      color:#a9b8cc;
+      margin:6px 0 0;
+      font-size:15px;
+    }
+
+    main{
+      max-width:900px;
+      margin:auto;
+      padding:clamp(16px,4vw,32px);
+      display:grid;
+      gap:24px;
+    }
+    section{
+      background:#0f141b80;
+      border:1px solid #253041;
+      border-radius:20px;
+      padding:24px;
+      backdrop-filter:blur(8px);
+      box-shadow:0 10px 30px #0006;
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    section:hover{transform:translateY(-2px);box-shadow:0 12px 35px #0008}
+    h2{
+      color:#77bfff;
+      margin-top:0;
+      text-shadow:0 0 8px #77bfff33;
+    }
+    p{
+      color:#c7d4e6;
+      margin-bottom:0.8em;
+    }
+    ul{
+      color:#d5e1f3;
+      line-height:1.6;
+      padding-left:24px;
+      margin:0.5em 0 0;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      color:#8fa4bf;
+      border-top:1px solid #253041;
+      background:#0b101680;
+      font-size:14px;
+    }
+    footer a{
+      color:#77bfff;
+      margin-left:6px;
+    }
+    footer a:hover{color:#a8d9ff;text-decoration:underline}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Travelya</h1>
+    <p>A next-generation social platform where travelers share their stories and experiences.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>🌍 What Is It?</h2>
+      <p><strong>Travelya</strong> is a platform designed for those who love to explore. Users can share their travel experiences, routes, photos, and reflections. Our goal is not just to create a blog, but to build a real <em>community</em>.</p>
+    </section>
+
+    <section>
+      <h2>🧭 Our Purpose</h2>
+      <p>To bring together travelers, nature lovers, and those with a spirit of discovery into one simple yet meaningful space. Travelya aims to create a place where people can share not only <em>where</em> they went, but also <em>what those moments made them feel</em>.</p>
+    </section>
+
+    <section>
+      <h2>💡 Features</h2>
+      <ul>
+        <li>Share personal travel stories and routes</li>
+        <li>Like, follow, and comment system</li>
+        <li>Modern, minimal, and focused user interface</li>
+        <li>Nature-inspired, discovery-oriented design</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🚀 Launch Date</h2>
+      <p>Our website is currently under development. Once our domain is active, the beta version will go live. Stay tuned for updates!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Travelya • <a href="index.html">Back to Home</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
